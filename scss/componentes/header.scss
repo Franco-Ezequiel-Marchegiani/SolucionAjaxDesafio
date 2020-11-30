@@ -1,0 +1,81 @@
+@import './variables.scss';
+.navbar{
+    background: $colorBlanco;
+    transition: .4s ease all;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+        .fa-bars{
+            color: $colorBlanco;
+        }
+        a {
+            color: $colorBlanco;
+            &:hover{
+                color: $grisClaroHover;
+            }
+        }
+              
+    }
+    .navbar-brand{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    nav{
+        align-self: center;
+        margin: 5px;
+        display: inline;
+    }
+    .nav-link{
+        padding: 5px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width:320px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:321px) and (max-width: 599px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 85px;
+                height: 85px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1199px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
